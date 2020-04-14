@@ -1,5 +1,5 @@
 <?php
-/* one way class - including database tools */
+/* simple PDO CRUD MySQL tool */
 class dbtool {
 var $connection = null;
 
