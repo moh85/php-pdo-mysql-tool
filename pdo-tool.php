@@ -4,7 +4,7 @@ class dbtool {
 var $connection = null;
 
 /* global connection method */
-function connect($HOST, $DBNAME, $USER, $PASS){
+function connect($HOST, $USER, $PASS, $DBNAME){
 try {
     $conn = new PDO("mysql:host=".$HOST.";dbname=".$DBNAME, $USER, $PASS);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
