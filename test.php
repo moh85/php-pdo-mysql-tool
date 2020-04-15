@@ -3,8 +3,8 @@
 include_once(__DIR__ . '/pdo-tool.php');
 
 /* connection */
-$dbtool = new dbtool;
-$db = $dbtool->connect('localhost', 'root', 'my_password', 'test_db');
+$db = new dbtool;
+$db->connect('localhost', 'root', 'my_password', 'test_db');
 
 /* insert */
 //$db->insert("into my_table (title) values (:title)", ['title' => 'Hello world!']); // return true
