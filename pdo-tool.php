@@ -21,7 +21,7 @@ try {
 $action = $this->connection->prepare("INSERT " . $query);
 foreach($array as $key => $value) { $action->bindParam(':' . $key, $value); }
 $action->execute();
-if($opt) return $this->connection->lastInsertId(); else true;
+if($opt) return $this->connection->lastInsertId(); else return true;
   }
 catch(PDOException $e){
 exit($e->getMessage());
